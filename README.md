@@ -1,2 +1,3 @@
-# wad-api-labs-2021
-This is a repo for the NodeJS API labs on the Web App Development 2 module in SETU (Waterford)
+# Web App Dev 2: Web API Labs
+
+Practical labs for the WAD2 module, BSc. Applied/Software Systems Dev/Forensics  
