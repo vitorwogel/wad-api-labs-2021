@@ -4,7 +4,7 @@ import uniqid from 'uniqid'
 import movieModel from './movieModel';
 import asyncHandler from 'express-async-handler';
 import {
-    getUpcomingMovies,
+    getUpcoming,
     getMovies
   } from '../tmdb-api';
 
@@ -60,7 +60,7 @@ router.post('/:id/reviews', (req, res) => {
 
 // upcoming movies using TMDB
 router.get('/tmdb/upcoming', asyncHandler( async(req, res) => {
-    const upcomingMovies = await getUpcomingMovies();
+    const upcomingMovies = await getUpcoming();
     res.status(200).json(upcomingMovies);
   }));
 
