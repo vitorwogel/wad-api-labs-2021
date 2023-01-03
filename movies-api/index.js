@@ -5,6 +5,7 @@ import express from 'express';
 import moviesRouter from './api/movies';
 import genresRouter from './api/genres'
 import usersRouter from './api/users';
+import tvRouter from './api/tv'
 import session from 'express-session';
 import passport from './authenticate';
 
@@ -31,6 +32,7 @@ app.use(express.json());
 app.use('/api/movies', moviesRouter);
 app.use('/api/genres', genresRouter)
 app.use('/api/users', usersRouter);
+app.use('/api/tv', tvRouter);
 app.use(errHandler);
 
 app.listen(port, () => {
